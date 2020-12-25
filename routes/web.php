@@ -18,6 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('hello', function () {
-    return '<html><body><h1>Hello</h1><p>This is sample page.</p></body></html>';
-});
+Route::get('hello/{id?}/{pass?}', 'App\Http\Controllers\HelloController@index');
